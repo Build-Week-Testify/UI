@@ -1,0 +1,27 @@
+@main-color: @dark-blue;
+@accent-color: @light-blue;
+
+
+//color palette 
+
+@dark-blue:  #4661B7;
+@green: #72C421;
+@light-blue: #04A3D3;
+@yellow: #E88802;
+@red: #DB2E30;
+
+
+//Mixins
+
+.flexsimp(@just, @align){
+    display: flex;
+    justify-content: @just;
+    align-items: @align;   
+}
+
+.flex(@dir, @just, @align){
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @just;
+    align-items: @align;
+}
