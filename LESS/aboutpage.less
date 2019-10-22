@@ -3,25 +3,25 @@
     width: 100%;
     margin:  3rem 0;
 
-    @media @mobile{
+    @media @mobile, @tablet{
         .flex(column, center, center)
     }
     .developer{
         width: 40%;
 
-        @media @mobile{width: 100%}
+        @media @mobile, @tablet{width: 100%}
         h3{
             width: 50%;
             
 
-            @media @mobile{
+            @media @mobile, @tablet{
                 width: 95%;
             }
         }
         p{
             width: 50%;  
             
-            @media @mobile{
+            @media @mobile, @tablet{
                 width: 95%;
                 height: auto;
                 font-size: 3rem;
@@ -44,7 +44,7 @@
         text-align: center;
         box-shadow: @shadow;
 
-        @media @mobile{
+        @media @mobile, @tablet{
             width: 95%;
             font-size: 4rem;
             margin: 3rem;
@@ -70,7 +70,7 @@
         border-bottom-right-radius: 2rem;
         box-shadow: @insetshadow;
 
-        @media @mobile{
+        @media @mobile, @tablet{
             width:95%;
             height: auto;
             border-radius: 2rem;
