@@ -10,6 +10,7 @@
   html, body {
     font-family: @font;
     color: @text-color;
+    
   }
   
   h1, h2, h3, h4, h5 {
@@ -30,3 +31,14 @@
     line-height: 1.4;
   }
   
+  .container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto; 
+    
+    
+    @media @mobile{
+      max-width: 500px;
+      width: 100%;
+    }
+  }
