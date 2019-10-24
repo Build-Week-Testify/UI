@@ -196,16 +196,18 @@ p {
   height: 20rem;
   border: 1px solid #4661B7;
   border-radius: 10rem;
-  box-shadow: 5px 6px 21px 1px #dce6fb;
+  box-shadow: 5px 6px 21px 1px #b0b4be;
   color: #72C421;
 }
 @media (max-width: 500px) {
   .mainheader h1 {
-    width: 80%;
+    width: 40rem;
     height: 15rem;
     margin-top: 15rem;
-    margin-left: -35rem;
+    margin-right: 10rem;
     background: white;
+    font-size: 5rem;
+    padding: 3rem;
   }
 }
 @media (max-width: 800px) {
@@ -226,7 +228,7 @@ p {
   height: 40rem;
   background: linear-gradient(135deg, #0d1757 0%, #356aa0 52%, #356aa0 50%);
   border-bottom-right-radius: 40rem;
-  box-shadow: 5px 6px 21px 1px #dce6fb;
+  box-shadow: 5px 6px 21px 1px #b0b4be;
 }
 @media (max-width: 500px), (max-width: 800px) {
   .navarea .semicircle {
@@ -307,7 +309,7 @@ p {
   height: 5rem;
   border: 1px solid #4661B7;
   border-radius: 10rem;
-  box-shadow: 5px 6px 21px 1px #dce6fb;
+  box-shadow: 5px 6px 21px 1px #b0b4be;
 }
 @media (max-width: 500px), (max-width: 800px) {
   .about h3 {
@@ -344,6 +346,7 @@ p {
   align-items: center;
   margin: 2rem 0;
   border-bottom: 1px solid #252a2a;
+  height: 60rem;
 }
 @media (max-width: 500px) {
   .users {
@@ -354,6 +357,7 @@ p {
     margin: 5rem 0;
     width: 100%;
     margin-bottom: 5rem;
+    height: auto;
   }
 }
 .users .user {
@@ -383,7 +387,7 @@ p {
   border: 1px solid #4661B7;
   border-radius: 10rem;
   font-size: 2rem;
-  box-shadow: 5px 6px 21px 1px #dce6fb;
+  box-shadow: 5px 6px 21px 1px #b0b4be;
 }
 @media (max-width: 500px) {
   .users .user h4 {
@@ -419,7 +423,7 @@ h2 {
   height: 6rem;
   margin: 0 25rem;
   margin-top: 4rem;
-  box-shadow: 5px 6px 21px 1px #dce6fb;
+  box-shadow: 5px 6px 21px 1px #b0b4be;
 }
 @media (max-width: 500px) {
   h2 {
@@ -435,7 +439,7 @@ h2 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 30rem;
+  height: auto;
 }
 @media (max-width: 500px) {
   .tests {
@@ -453,7 +457,7 @@ h2 {
   align-items: center;
   padding: 1rem;
   width: 30%;
-  height: 25rem;
+  height: auto;
 }
 @media (max-width: 500px) {
   .tests .test {
@@ -472,7 +476,7 @@ h2 {
   margin-bottom: -2rem;
   background: white;
   font-size: 1.5rem;
-  box-shadow: 5px 6px 21px 1px #dce6fb;
+  box-shadow: 5px 6px 21px 1px #b0b4be;
 }
 @media (max-width: 500px) {
   .tests .test h5 {
@@ -482,18 +486,21 @@ h2 {
     font-size: 3rem;
   }
 }
-.tests .test p {
+.tests .test img {
+  width: 100%;
+  height: auto;
   position: relative;
   z-index: -1;
   background: #DCE6FB;
   padding: 1rem;
-  padding-top: 2rem;
-  border-radius: 2rem;
+  border-radius: 4rem;
+  box-shadow: 5px 6px 21px 1px #b0b4be;
 }
 footer {
   width: 100%;
   height: 5rem;
   background: #4661B7;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -563,7 +570,7 @@ footer .icons img {
   align-items: center;
   margin: 1rem;
   text-align: center;
-  box-shadow: 5px 6px 21px 1px #dce6fb;
+  box-shadow: 5px 6px 21px 1px #b0b4be;
 }
 @media (max-width: 500px), (max-width: 800px) {
   .developer h3 {
