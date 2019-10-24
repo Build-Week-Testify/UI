@@ -154,7 +154,6 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
-  box-shadow: inset 0px 0px 64px 36px rgba(70, 97, 183, 0.26);
 }
 @media (max-width: 500px) {
   p {
@@ -162,7 +161,6 @@ p {
   }
 }
 .container {
-  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
@@ -183,20 +181,18 @@ p {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 40rem;
+  height: 80rem;
   width: 100%;
 }
 .mainheader h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
-  font-size: 12rem;
+  margin-top: 25rem;
+  font-size: 20rem;
+  text-shadow: 2px 2px 5px #030303;
   width: 60rem;
   height: 20rem;
-  border: 1px solid #4661B7;
-  border-radius: 10rem;
-  box-shadow: 5px 6px 21px 1px #dce6fb;
   color: #72C421;
 }
 @media (max-width: 500px) {
@@ -217,6 +213,14 @@ p {
     background: white;
   }
 }
+.mainheader p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+  color: #6C7A89;
+}
 .navarea {
   position: relative;
   display: inline-block;
@@ -226,7 +230,7 @@ p {
   height: 40rem;
   background: linear-gradient(135deg, #0d1757 0%, #356aa0 52%, #356aa0 50%);
   border-bottom-right-radius: 40rem;
-  box-shadow: 5px 6px 21px 1px #dce6fb;
+  box-shadow: 5px 6px 21px 1px #b0b4be;
 }
 @media (max-width: 500px), (max-width: 800px) {
   .navarea .semicircle {
@@ -286,10 +290,11 @@ p {
 }
 .about {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  border-bottom: 1px solid #252a2a;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60rem;
+  background: #DEE4FF;
 }
 @media (max-width: 500px), (max-width: 800px) {
   .about {
@@ -305,9 +310,6 @@ p {
   align-items: center;
   width: 30rem;
   height: 5rem;
-  border: 1px solid #4661B7;
-  border-radius: 10rem;
-  box-shadow: 5px 6px 21px 1px #dce6fb;
 }
 @media (max-width: 500px), (max-width: 800px) {
   .about h3 {
@@ -326,6 +328,7 @@ p {
   border-radius: 10rem;
   padding: 3rem;
   margin: 2rem 0;
+  color: #6C7A89;
 }
 @media (max-width: 500px), (max-width: 800px) {
   .about p {
@@ -337,13 +340,22 @@ p {
     padding-top: 4rem;
   }
 }
+.about img {
+  width: 40%;
+  height: auto;
+  margin: 5rem;
+  border-radius: 2rem;
+  box-shadow: 5px 6px 21px 1px #b0b4be;
+}
 .users {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
-  border-bottom: 1px solid #252a2a;
+  height: 80rem;
+  background: #A0B0D7;
+  position: relative;
+  z-index: -2;
 }
 @media (max-width: 500px) {
   .users {
@@ -363,8 +375,8 @@ p {
   align-items: center;
   margin: 1rem;
   padding: 1rem;
-  width: 45%;
-  height: 30rem;
+  width: 30%;
+  height: 50rem;
 }
 @media (max-width: 500px) {
   .users .user {
@@ -383,7 +395,6 @@ p {
   border: 1px solid #4661B7;
   border-radius: 10rem;
   font-size: 2rem;
-  box-shadow: 5px 6px 21px 1px #dce6fb;
 }
 @media (max-width: 500px) {
   .users .user h4 {
@@ -397,9 +408,10 @@ p {
   position: relative;
   z-index: -1;
   background: #DCE6FB;
-  padding: 1rem;
+  padding: 2rem;
   padding-top: 2rem;
   border-radius: 2rem;
+  box-shadow: 5px 6px 21px 1px #b0b4be;
 }
 @media (max-width: 500px) {
   .users .user p {
@@ -409,17 +421,23 @@ p {
     margin-bottom: 3rem;
   }
 }
+.users img {
+  width: 30%;
+  height: auto;
+  border-radius: 2rem;
+  box-shadow: 5px 6px 21px 1px #b0b4be;
+}
 h2 {
   display: flex;
   justify-content: center;
-  align-items: center;
   border: 1px solid #4661B7;
   border-radius: 10rem;
+  align-items: center;
   width: 40%;
   height: 6rem;
-  margin: 0 25rem;
+  margin: 0 37rem;
   margin-top: 4rem;
-  box-shadow: 5px 6px 21px 1px #dce6fb;
+  box-shadow: 5px 6px 21px 1px #b0b4be;
 }
 @media (max-width: 500px) {
   h2 {
@@ -472,7 +490,6 @@ h2 {
   margin-bottom: -2rem;
   background: white;
   font-size: 1.5rem;
-  box-shadow: 5px 6px 21px 1px #dce6fb;
 }
 @media (max-width: 500px) {
   .tests .test h5 {
@@ -489,11 +506,23 @@ h2 {
   padding: 1rem;
   padding-top: 2rem;
   border-radius: 2rem;
+  box-shadow: 5px 6px 21px 1px #b0b4be;
+}
+button {
+  width: 20%;
+  height: 5rem;
+  border-radius: 2rem;
+  background: #4661B7;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  margin: 10rem 50rem;
 }
 footer {
   width: 100%;
-  height: 5rem;
-  background: #4661B7;
+  height: 10rem;
+  background: #2A3978;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -563,7 +592,7 @@ footer .icons img {
   align-items: center;
   margin: 1rem;
   text-align: center;
-  box-shadow: 5px 6px 21px 1px #dce6fb;
+  box-shadow: 5px 6px 21px 1px #b0b4be;
 }
 @media (max-width: 500px), (max-width: 800px) {
   .developer h3 {
