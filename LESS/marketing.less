@@ -29,6 +29,7 @@
         padding: 3rem;
         margin: 2rem 0;
         
+        
 
         @media @mobile, @tablet {
             text-align: center;
@@ -46,12 +47,14 @@
     .flex(row, center, center);
     margin: 2rem 0;
     border-bottom:1px solid @text-color;
+    height: 60rem;
 
     @media @mobile {
         .flex(column, center,center);
         margin:5rem 0;
         width: 100%;
         margin-bottom: 5rem;
+        height: auto;
     }
     .user{
         .flex(column, center, center);
@@ -124,7 +127,7 @@ h2{
 .tests{
     .flex(row,center,center);
     width: 100%;
-    height: 30rem;
+    height: auto;
 
     @media @mobile{
         .flex(column, center, center);
@@ -135,7 +138,7 @@ h2{
         .flex(column, center,center);
         padding: 1rem;
         width: 30%;
-        height: 25rem;
+        height: auto;
 
         @media @mobile{
             width: 100%;
@@ -160,23 +163,29 @@ h2{
             }
         }
 
-        p{
+        img{
+            width: 100%;
+            height: auto;
             position: relative;
             z-index: -1;
             background: @accent-color;
             padding: 1rem;
-            padding-top: 2rem; 
-            border-radius: 2rem;
+            border-radius: 4rem;
+            box-shadow: @shadow;
         }
     }
+    
 }
+
+
 
 footer{
     width: 100%;
     height: 5rem;
     background: @main-color;
+    color:white;
     .flex(column, center,center);
-
+    
     .icons{
         margin: 1rem;
 
